@@ -1,12 +1,17 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2020": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "ecmaVersion": 11
-    },
-    "rules": {
-    }
+  "env": {
+      "browser": true,
+      "es6": true
+  },
+  "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+      "ecmaVersion": 2018
+  },
+  "rules": {
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"]
+  }
 };
