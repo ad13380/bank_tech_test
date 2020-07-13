@@ -17,6 +17,6 @@ class Account {
   }
 
   _updateBalance(amount) {
-    this._balance += amount
+    this._balance += amount;
   }
 }
