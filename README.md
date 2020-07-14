@@ -1,3 +1,4 @@
+# Bank Tech Test
 ## UML Diagram
 <img src="./images/UML_diagram.png" width="700">
 
@@ -24,3 +25,28 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
 ```
+## How To Use
+1. Clone this repo.
+2. Open browser console.
+3. Set up your account
+  ```js
+  account = new Account()
+  ```
+4. Interact with your account
+  ```js
+  // desposit an amount
+  account.deposit(AN_AMOUNT)
+  
+  // withdraw an amount
+  account.withdraw(AN_AMOUNT)
+  
+  //review transaction history
+  account.statement
+  ```
+## Reviewing Tests
+Open `SpecRunner.html` in your terminal. 
+```
+$ open SpecRunner.html
+```
+
+All tests should be green as shown
