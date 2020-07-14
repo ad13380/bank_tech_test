@@ -1,6 +1,6 @@
 describe("Statement", function() {
-var header
-var account
+  var header
+  var account
 
   beforeEach(function() {
     jasmine.clock().mockDate(new Date(1990, 1, 1));
