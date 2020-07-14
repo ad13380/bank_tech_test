@@ -54,7 +54,6 @@ All tests should be green as shown
 
 ## Dependencies
 Development:
-
 - [Jasmine](https://jasmine.github.io/index.html) - testing framework
 - [ESLint](https://eslint.org/) - Javascript linter
 
@@ -78,7 +77,7 @@ The requirements did not specify:
 - Any confirmation message to be displayed when a transaction is completed
 - The need to prohibit a negative account balance from being created
 
-Hence no considerations were made for these diuring the design process
+Hence no considerations were made for these during the design process
 
 ### UML Diagram
 <img src="./images/UML_diagram.png" width="700">
