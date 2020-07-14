@@ -19,9 +19,9 @@ describe("Transaction", function() {
 
   describe(".date", function() {
     it("should return the current date", function() {
-      jasmine.clock().mockDate(new Date(1970, 1, 1));
+      jasmine.clock().mockDate(new Date(1990, 1, 1));
       const transMockTime = new Transaction();
-      expect(transMockTime.date).toEqual(new Date(1970, 1, 1));
+      expect(transMockTime.date).toEqual(new Date(1990, 1, 1));
     });
   });
 });
