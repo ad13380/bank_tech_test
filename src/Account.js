@@ -1,19 +1,30 @@
 'use strict';
 
 class Account {
-  constructor(transactionClass = Transaction) {
+  constructor(transactionClass = Transaction, logger = new Logger, presentation = new Presentation) {
+    this.DEFAULT_BALANCE = 0;
     this.transactionClass = transactionClass;
-    this._balance = 0;
+    this.logger = logger;
+    this.presentation = presentation;
+    this._balance = this.DEFAULT_BALANCE;
   }
   
   deposit(amount) {
     this._updateBalance(amount);
-    new this.transactionClass(undefined, amount, this._balance);
+    this._logEntry(new this.transactionClass(undefined, amount, this._balance));
   }
 
   withdraw(amount) {
     this._updateBalance(-amount);
-    new this.transactionClass(amount, undefined, this._balance);
+    this._logEntry(new this.transactionClass(amount, undefined, this._balance));
+  }
+
+  get statement() {
+    console.log(this.presentation.statement(this.logger.history));
+  }
+
+  _logEntry(transaction) {
+    this.logger.addEntry(transaction);
   }
 
   _updateBalance(amount) {
