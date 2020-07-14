@@ -45,8 +45,9 @@ Open `SpecRunner.html` in your terminal.
 ```
 $ open SpecRunner.html
 ```
-<img src="./images/jasmine_tests.png" width="700">
 All tests should be green as shown
+
+<img src="./images/jasmine_tests.png" width="400">
 
 ## UML Diagram
 <img src="./images/UML_diagram.png" width="700">
