@@ -55,9 +55,8 @@ All tests should be green as shown
 ## Dependencies
 Development:
 
-[Jasmine](https://jasmine.github.io/index.html) - testing framework
-
-[ESLint](https://eslint.org/) - Javascript linter
+- [Jasmine](https://jasmine.github.io/index.html) - testing framework
+- [ESLint](https://eslint.org/) - Javascript linter
 
 ## Design Process
 
