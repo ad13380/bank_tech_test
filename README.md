@@ -57,5 +57,29 @@ Development:
 
 [Jasmine](https://jasmine.github.io/index.html) - testing framework
 
-## UML Diagram
+[ESLint](https://eslint.org/) - Javascript linter
+
+## Design Process
+
+- I began the process of designing the solution by determining the different responsibilities the app would have and figuring out how to separate them into individual classes. 
+- I then drew up a class diagram based on this design that detailed the parameters and methods that each class would hold. 
+- From there, I was able to run "manual feature tests" for each of the apps core features in the browser console.
+- Based on the error given by the feture test, individual unit tests were created.
+- Using a TDD approach, each class was created separately with functionality being added incrementally.
+- The app was considered complete once all unit, and hence feature, tests were passing.
+- Automated feature tests were then added separately to ensure the app would still work if the current date was mocked.
+- A Javascript linter was then used to ensure code quality.
+
+### Assumptions
+
+The requirements did not specify:
+
+- Any error checking functionality for the user input
+- Any particular currency to be used
+- Any confirmation message to be displayed when a transaction is completed
+- The need to prohibit a negative account balance from being created
+
+Hence no considerations were made for these diuring the design process
+
+### UML Diagram
 <img src="./images/UML_diagram.png" width="700">
