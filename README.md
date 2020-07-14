@@ -27,7 +27,7 @@ date || credit || debit || balance
 2. Open browser console.
 3. Set up your account
   ```js
-  account = new Account()
+  let account = new Account()
   ```
 4. Interact with your account
   ```js
@@ -40,6 +40,9 @@ date || credit || debit || balance
   //review transaction history
   account.statement
   ```
+### Screen Preview
+<img src="./images/screen_recording.gif">
+
 ## Reviewing Tests
 Open `SpecRunner.html` in your terminal. 
 ```
@@ -48,6 +51,11 @@ $ open SpecRunner.html
 All tests should be green as shown
 
 <img src="./images/jasmine_tests.png" width="400">
+
+## Dependencies
+Development:
+
+[Jasmine](https://jasmine.github.io/index.html) - testing framework
 
 ## UML Diagram
 <img src="./images/UML_diagram.png" width="700">
