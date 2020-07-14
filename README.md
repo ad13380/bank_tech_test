@@ -1,7 +1,4 @@
 # Bank Tech Test
-## UML Diagram
-<img src="./images/UML_diagram.png" width="700">
-
 ## Specification
 
 ### Requirements
@@ -48,5 +45,8 @@ Open `SpecRunner.html` in your terminal.
 ```
 $ open SpecRunner.html
 ```
-
+<img src="./images/jasmine_tests.png" width="700">
 All tests should be green as shown
+
+## UML Diagram
+<img src="./images/UML_diagram.png" width="700">
