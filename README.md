@@ -23,8 +23,8 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 ## How To Use
-1. Clone this repo.
-2. Open browser console.
+1. Clone this repo
+2. Open browser console
 3. Set up your account
   ```js
   let account = new Account()
