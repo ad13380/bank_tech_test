@@ -8,7 +8,7 @@ describe('Logger', function() {
   beforeEach(function() {
     spyTransaction = jasmine.createSpy();
     spyTransaction2 = jasmine.createSpy();
-    logger = new Logger();
+    logger = new Logger;
   });
 
   describe('.add', function() {
