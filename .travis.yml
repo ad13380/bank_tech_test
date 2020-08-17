@@ -1,6 +1,6 @@
 env:
   global:
-    - CC_TEST_REPORTER_ID=e8cdefa65969433b034568fbc7186895620309a9b34a607bf4f13d7dcf0f929d
+    - CC_TEST_REPORTER_ID=d58743209afd1a11aeb1827a69ef99c019f567cb42a0091c19c7f50885d2e22f
 
 langauge: node_js
 
@@ -11,12 +11,12 @@ install:
   - npm install
 
 before_script:
-  # - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  # - chmod +x ./cc-test-reporter
-  # - ./cc-test-reporter before-build
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 
 script:
   - npm test
 
 after_script:
-  # - ./cc-test-reporter after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
