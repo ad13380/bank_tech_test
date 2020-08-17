@@ -1,3 +1,5 @@
+var Account = require("../src/Account.js");
+
 describe('Account', function() {
   var spyTransaction;
   var account;

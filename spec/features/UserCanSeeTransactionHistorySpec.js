@@ -1,3 +1,5 @@
+var Account = require("../../src/Account.js");
+
 describe('Statement', function() {
   var header;
   var account;

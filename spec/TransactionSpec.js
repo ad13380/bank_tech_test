@@ -1,3 +1,5 @@
+var Transaction = require("../src/Transaction.js");
+
 describe('Transaction', function() {
   var transaction;
 

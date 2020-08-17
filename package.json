@@ -1,17 +1,20 @@
 {
   "name": "bank_tech_test",
   "version": "1.0.0",
-  "description": "",
+  "description": "### Requirements",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
+  "spec_dir": "spec",
   "dependencies": {
     "eslint": "^7.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jasmine": "^3.6.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/ad13380/bank_tech_test/issues"
   },
-  "homepage": "https://github.com/ad13380/bank_tech_test#readme"
+  "homepage": "https://github.com/ad13380/bank_tech_test#readme",
+  "keywords": []
 }

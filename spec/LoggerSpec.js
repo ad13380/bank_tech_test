@@ -1,3 +1,5 @@
+var Logger = require("../src/Logger.js");
+
 describe('Logger', function() {
   var spyTransaction;
   var spyTransaction2;
@@ -6,7 +8,7 @@ describe('Logger', function() {
   beforeEach(function() {
     spyTransaction = jasmine.createSpy();
     spyTransaction2 = jasmine.createSpy();
-    logger = new Logger;
+    logger = new Logger();
   });
 
   describe('.add', function() {

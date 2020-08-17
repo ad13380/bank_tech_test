@@ -13,3 +13,5 @@ class Logger {
     return this._history;
   }
 }
+
+module.exports = Logger;

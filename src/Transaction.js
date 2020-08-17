@@ -24,3 +24,5 @@ class Transaction {
     return this._balance;
   }
 }
+
+module.exports = Transaction;

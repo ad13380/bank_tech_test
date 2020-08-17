@@ -1,3 +1,5 @@
+var Account = require("../../src/Account.js");
+
 describe('Deposit', function() {
   var header;
   var account;

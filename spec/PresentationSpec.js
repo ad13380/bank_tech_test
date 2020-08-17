@@ -1,3 +1,6 @@
+var Presentation = require("../src/Presentation.js");
+var Transaction = require("../src/Transaction.js");
+
 describe('Presentation', function() {
   var presentation;
   var spyTransaction;
@@ -5,7 +8,7 @@ describe('Presentation', function() {
 
   beforeEach(function() {
     presentation = new Presentation();
-    spyTransaction = new Transaction;
+    spyTransaction = new Transaction();
     spyOnProperty(spyTransaction, 'date', 'get').and.returnValue(new Date(2011, 12, 13));
     spyOnProperty(spyTransaction, 'credit', 'get').and.returnValue(900);
     spyOnProperty(spyTransaction, 'balance', 'get').and.returnValue(900);

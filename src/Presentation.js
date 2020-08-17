@@ -28,3 +28,5 @@ class Presentation {
     return `${parts[2]}/${parts[1]}/${parts[0]} `;
   }
 }
+
+module.exports = Presentation;

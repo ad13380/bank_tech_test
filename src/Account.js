@@ -1,7 +1,10 @@
 'use strict';
+var Transaction = require("./Transaction.js");
+var Logger = require("./Logger.js");
+var Presentation = require("./Presentation.js");
 
 class Account {
-  constructor(transactionClass = Transaction, logger = new Logger, presentation = new Presentation) {
+  constructor(transactionClass = Transaction, logger = new Logger(), presentation = new Presentation()) {
     this.DEFAULT_BALANCE = 0;
     this.transactionClass = transactionClass;
     this.logger = logger;
@@ -31,3 +34,5 @@ class Account {
     this._balance += amount;
   }
 }
+
+module.exports = Account;
