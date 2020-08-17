@@ -11,10 +11,13 @@
     "eslint": "^7.4.0"
   },
   "devDependencies": {
-    "jasmine": "^3.6.1"
+    "jasmine": "^3.6.1",
+    "nyc": "^15.1.0"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "coverage": "nyc --reporter=text npm test"
+
   },
   "repository": {
     "type": "git",
