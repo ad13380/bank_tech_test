@@ -9,6 +9,7 @@ node_js:
 
 install:
   - npm install
+  - npm install nyc -g
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -16,7 +17,7 @@ before_script:
   - ./cc-test-reporter before-build
 
 script:
-  - npm test
+  - nyc --reporter=lcov npm run test
 
 after_script:
   - ./cc-test-reporter after-build -t lcov --exit-code $TRAVIS_TEST_RESULT

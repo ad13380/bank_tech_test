@@ -15,8 +15,7 @@
     "nyc": "^15.1.0"
   },
   "scripts": {
-    "test": "nyc jasmine",
-    "coverage": "nyc report --reporter=text-lcov"
+    "test": "nyc jasmine"
   },
   "repository": {
     "type": "git",
