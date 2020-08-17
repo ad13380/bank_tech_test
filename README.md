@@ -1,6 +1,7 @@
 # Bank Tech Test
 [![Build Status](https://travis-ci.org/ad13380/bank_tech_test.svg?branch=master)](https://travis-ci.org/ad13380/bank_tech_test)
 [![Maintainability](https://api.codeclimate.com/v1/badges/283f334c3b3917e51c31/maintainability)](https://codeclimate.com/github/ad13380/bank_tech_test/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/283f334c3b3917e51c31/test_coverage)](https://codeclimate.com/github/ad13380/bank_tech_test/test_coverage)
 ## Specification
 
 ### Requirements
